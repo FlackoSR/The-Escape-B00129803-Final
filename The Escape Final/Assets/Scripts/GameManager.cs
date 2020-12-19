@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
       bool gameHasEnded = false;
-      private float restartDelay = 1f;
+     // private float restartDelay = 1f;
     // public GameObject gameOverPanel;
 
     void Start()

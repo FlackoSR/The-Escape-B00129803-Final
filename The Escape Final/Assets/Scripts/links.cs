@@ -6,6 +6,6 @@ public class links : MonoBehaviour
 {
    public void GitHub()
     {
-        Application.OpenURL("https://github.com/FlackoSR/RyanTataru_Game");
+        Application.OpenURL("https://github.com/FlackoSR/The-Escape-B00129803-Final");
     }
 }
