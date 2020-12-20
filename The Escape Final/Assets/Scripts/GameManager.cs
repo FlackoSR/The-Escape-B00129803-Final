@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
         }
     public void Restart()
       {
+        //Loads a scene again (as a loop) when the game is over 
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
       }
 

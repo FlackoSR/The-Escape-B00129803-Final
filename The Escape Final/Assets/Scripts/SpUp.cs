@@ -21,14 +21,15 @@ public class SpUp : MonoBehaviour
     }
     IEnumerator Pickup(Collider Player)
     {
-        //applies effect to the player
+        //applies the powerup to the player
         Player.transform.localScale *= Growthmultiplier;
 
         //disable graphics
 
         GetComponent<Collider>().enabled = false;
-
+        //Sets a waiting time for the powerup to expire
         yield return new WaitForSeconds(waitTime);
+        //disables the powerup to the player after the time specified
         Player.transform.localScale /= Growthmultiplier;
         //Destroys the effect
         Destroy(gameObject);

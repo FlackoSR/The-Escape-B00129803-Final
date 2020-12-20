@@ -20,6 +20,7 @@ public class FootSteps : MonoBehaviour
     }
     private void PlayerFootstepSound()
     {
+        //adds sounds to the footsteps
         Running.Play();
     }
 }
