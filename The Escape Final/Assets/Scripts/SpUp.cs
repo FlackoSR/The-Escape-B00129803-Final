@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpUp : MonoBehaviour
 {
-    public float Growthmultiplier = 1.5f;
-    public float waitTime = 4f;
+    private float Growthmultiplier = 1.5f;
+    private float waitTime = 5f;
   
 
     void Start()
