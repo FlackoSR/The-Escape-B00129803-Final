@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
+public class SpUp : MonoBehaviour
 {
     public float Growthmultiplier = 1.5f;
-    public float waitTime = 4f; 
-
+    public float waitTime = 4f;
+  
 
     void Start()
     {
-       
+
     }
     void OnTriggerEnter(Collider other)
     {
@@ -21,12 +21,11 @@ public class PowerUp : MonoBehaviour
     }
     IEnumerator Pickup(Collider Player)
     {
-
         //applies effect to the player
         Player.transform.localScale *= Growthmultiplier;
 
         //disable graphics
-    
+
         GetComponent<Collider>().enabled = false;
 
         yield return new WaitForSeconds(waitTime);
@@ -36,5 +35,4 @@ public class PowerUp : MonoBehaviour
 
 
     }
-     
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveBackward : MonoBehaviour
 {
-    public float speed = 3;
+    private float speed = 3;
     private float maxSpeed = 15;
     void Start()
     {
