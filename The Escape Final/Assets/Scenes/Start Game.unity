@@ -149,6 +149,7 @@ RectTransform:
   m_Children:
   - {fileID: 527852692}
   - {fileID: 1451477928}
+  - {fileID: 1997049643}
   - {fileID: 829036249}
   m_Father: {fileID: 612044052}
   m_RootOrder: 2
@@ -585,7 +586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -98.2, y: 95.5}
+  m_AnchoredPosition: {x: -3.7, y: 95.5}
   m_SizeDelta: {x: 160.89, y: 37.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527852693
@@ -972,11 +973,11 @@ RectTransform:
   m_Children:
   - {fileID: 738028691}
   m_Father: {fileID: 139504041}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 210.7, y: -100.25}
+  m_AnchoredPosition: {x: 212.2, y: -82.9}
   m_SizeDelta: {x: 112.51, y: 42.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829036250
@@ -1197,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -66.5, y: -27.735}
+  m_AnchoredPosition: {x: -107.3, y: -17.085}
   m_SizeDelta: {x: 231.42, y: 188.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451477929
@@ -1610,6 +1611,88 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901660141}
+  m_CullTransparentMesh: 0
+--- !u!1 &1997049642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997049643}
+  - component: {fileID: 1997049645}
+  - component: {fileID: 1997049644}
+  m_Layer: 5
+  m_Name: InstMenu (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1997049643
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997049642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 139504041}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 142.6, y: 21.105}
+  m_SizeDelta: {x: 259.4, y: 111.65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1997049644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997049642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ec874a5364ce84843818c55fe5a3b460, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Power-Ups:
+
+    There will be 3 powerups, one will make you bigger, the other will make you smaller,
+    but the third one is a trap(It will be shaped like a bomb).'
+--- !u!222 &1997049645
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997049642}
   m_CullTransparentMesh: 0
 --- !u!1 &2062036068
 GameObject:
